@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gangaram Enterprises  | Home Interiors & Furniture</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/Luxe Living Logo.png" />
+
+    <script src="tailwind-config.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts: Playfair Display for Headings, Inter for Body -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body
+    class="bg-gray-50 text-slate-800 antialiased font-sans flex flex-col min-h-screen overflow-x-hidden"
+  >
+    <!-- Navigation -->
+    <nav
+      class="fixed top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm duration-300 border-b border-gold-500/20 w-full overflow-hidden"
+    >
+      <div
+        class="container mx-auto py-2 md:py-3 flex justify-between items-center relative"
+      >
+        <!-- Left Side: Contact Details (Desktop) -->
+        <div
+          class="hidden md:flex flex-col justify-center text-xs text-slate-600 font-medium space-y-1"
+        >
+          <div class="flex items-center gap-2">
+            <i class="fa-solid fa-user text-gold-500"></i>
+            <span class="font-bold text-black">Aravind Reddy</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <i class="fa-solid fa-phone text-gold-500"></i>
+            <span class="font-bold">+91 96400 44469</span>
+          </div>
+        </div>
+
+        <!--  Logo Section (Navbar Item) -->
+        <a href="#" class="logo-center" aria-label="Luxe Living - Home">
+          <!-- <div class="logo-img-wrapper">
+            <img
+              src="assets/Luxe Living Logo.png"
+              alt="Luxe Living Logo"
+              class="logo-img"
+            />
+          </div> -->
+          <div class="logo-text">
+            <p class="brand-name">GangaramEnterprises</p>
+            <p class="brand-sub">Home Interiors &amp; Furniture</p>
+          </div>
+        </a>
+
+        <style>
+          @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap");
+
+          /* Base – logo block */
+          .logo-center {
+            display: flex;
+            align-items: center;
+            gap: 2px;
+            /* background: #000; */
+            color: #fff;
+            padding: 6px 12px;
+            border-radius: 8px;
+            text-decoration: none;
+            box-sizing: border-box;
+            z-index: 20;
+            /* keep it visually compact by default */
+            width: auto;
+            height: 56px;
+            overflow: hidden;
+            margin-left: 6px;
+          }
+
+          .logo-img-wrapper {
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+          }
+
+          /* Image visually aligned to text */
+          .logo-img {
+            height: 40px;
+            width: auto;
+            object-fit: contain;
+            display: block;
+          }
+
+          .logo-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            line-height: 1;
+          }
+          .brand-name {
+            font-family: "Cinzel", serif;
+            font-weight: 700;
+            margin: 0;
+            font-size: 22px;
+            color: #755802;
+            letter-spacing: 0.6px;
+          }
+          .brand-sub {
+            font-family: "Cinzel", serif;
+            font-weight: 600;
+            margin: 6px 0 0;
+            font-size: 18px;
+            color: #755802;
+            text-align: center;
+          }
+
+          /* ------- Desktop: center with constraint that prevents overlap ------- */
+          @media (min-width: 768px) {
+            /* Use absolute centering but constrain width so it won't collide with left/right content.
+       The calc values assume approx 240px reserved for left + right combined.
+       Adjust 240px if your left+right areas are wider. */
+            .logo-center {
+              position: absolute;
+              left: 50%;
+              top: 50%;
+              transform: translate(-50%, -50%);
+              /* clamp width: choose the smaller of 360px or (available container width minus reserved space) */
+              max-width: min(360px, calc(100% - 240px));
+              width: auto;
+              height: 52px;
+              padding: 8px 16px;
+            }
+            .logo-img {
+              height: 10px;
+            }
+            .brand-name {
+              font-size: 20px;
+            }
+            .brand-sub {
+              font-size: 13px;
+            }
+          }
+
+          /* ------- Mobile: keep in document flow so it never overlaps hamburger ------- */
+          @media (max-width: 767px) {
+            .logo-center {
+              position: static; /* normal flow: won't overlap left/right items */
+              transform: none;
+              margin: 0 4px;
+              width: auto;
+              max-width: 95%;
+              height: 56px;
+              padding: 6px 12px;
+            }
+            .logo-img {
+              height: 50px;
+            }
+            .brand-name {
+              font-size: 16px;
+            }
+            .brand-sub {
+              font-size: 10px;
+            }
+          }
+
+          /* small accessible focus styling */
+          .logo-center:focus {
+            outline: 2px solid rgba(255, 255, 255, 0.12);
+            outline-offset: 2px;
+          }
+        </style>
+        <!-- Right Side: Menu -->
+        <div class="flex items-center gap-6">
+          <!-- Desktop Menu Links -->
+          <div
+            class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-600"
+          >
+            <a href="#collections" class="hover:text-gold-600 transition-colors"
+              >Services</a
+            >
+            <!-- <a href="#about" class="hover:text-gold-600 transition-colors">Our Work</a> -->
+            <a href="#contact" class="hover:text-gold-600 transition-colors"
+              >Contact</a
+            >
+          </div>
+
+          <!-- Mobile Hamburger Button -->
+          <button
+            id="mobile-menu-btn"
+            class="md:hidden p-2 text-slate-900 focus:outline-none hover:text-gold-600 transition-colors"
+            aria-label="Toggle menu"
+          >
+            <i id="mobile-menu-icon" class="fa-solid fa-bars text-xl"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      id="home"
+      class="relative h-[500px] md:h-[600px] flex items-center justify-center overflow-hidden w-full"
+    >
+      <div class="absolute inset-0 z-0 w-full">
+        <img
+          src="https://images.unsplash.com/photo-1600210492493-0946911123ea?q=80&w=2000&auto=format&fit=crop"
+          alt="Luxe Interiors"
+          class="w-full h-full object-cover object-center"
+        />
+        <div
+          class="absolute inset-0 bg-gradient-to-r from-black/85 to-black/55"
+        ></div>
+      </div>
+
+      <div
+        class="container mx-auto pt-16 z-10 text-white fade-in-up text-center"
+      >
+        <!-- <h2
+      class="font-serif text-4xl md:text-7xl font-bold  leading-tight"
+      >
+      GangaramEnterprises
+    </h2>  -->
+        <span class="hero-title">We Design for your Comfort</span>
+        <style>
+          .hero-title {
+            font-family: "Playfair Display", serif;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: #e7d8a6; /* your gold color */
+            font-size: 1.5rem;
+          }
+          @media (min-width: 768px) {
+            .hero-title {
+              font-size: 4rem;
+            }
+          }
+        </style>
+        <p
+          class="hero-subtext"
+          style="
+            font-family: 'Lora', serif;
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.85);
+            line-height: 1.8;
+            margin-bottom: 2rem;
+            max-width: 32rem;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+          "
+        >
+          Premium Sofas, Furniture, Interior design & Decor by Aravind Reddy.
+        </p>
+        <style>
+          /* ⭐ Increase font size on larger screens */
+          @media (min-width: 768px) {
+            .hero-subtext {
+              font-size: 1.5rem !important;
+            }
+          }
+        </style>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <button
+            id="explore-services-btn"
+            style="
+              font-family: 'Inter', sans-serif;
+              font-weight: 600;
+              background: #f1ba21;
+              color: #000;
+              padding: 0.75rem 2rem;
+              border-radius: 4px;
+              border: none;
+              cursor: pointer;
+              font-size: 1.125rem;
+              letter-spacing: 0.03em;
+              box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+              transition: all 0.3s ease;
+            "
+          >
+            Explore Services
+          </button>
+          <a
+            href="tel:+919640044469"
+            class="inline-flex items-center justify-center bg-white/20 backdrop-blur-sm border border-white/30 text-white font-semibold py-3 px-8 rounded-sm hover:bg-white/20 transition-all duration-300 gap-2"
+          >
+            <i class="fa-solid fa-phone text-gold-400"></i> Call Us
+          </a>
+        </div>
+        <div
+          id="decor-tip-container"
+          class="mt-6 max-w-lg hidden mx-auto md:mx-0"
+        >
+          <div
+            class="bg-black/60 backdrop-blur-md p-4 rounded border-l-4 border-gold-500"
+          >
+            <p id="decor-tip-text" class="text-sm italic text-gray-200"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Strip -->
+    <section
+      class="bg-black text-gold-500 py-10 border-b border-gray-800 w-full overflow-hidden"
+    >
+      <div
+        class="container mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center"
+      >
+        <div class="flex flex-col items-center gap-2 group cursor-default">
+          <i class="fa-solid fa-paint-roller text-3xl mb-2"></i>
+          <h3 class="font-semibold text-sm text-white">Colors & Painting</h3>
+        </div>
+        <div class="flex flex-col items-center gap-2 group cursor-default">
+          <i class="fa-solid fa-film text-3xl mb-2"></i>
+          <h3 class="font-semibold text-sm text-white">Home Theatre</h3>
+        </div>
+        <div class="flex flex-col items-center gap-2 group cursor-default">
+          <i class="fa-solid fa-kitchen-set text-3xl mb-2"></i>
+          <h3 class="font-semibold text-sm text-white">Modular Kitchens</h3>
+        </div>
+        <div class="flex flex-col items-center gap-2 group cursor-default">
+          <i class="fa-solid fa-couch text-3xl mb-2"></i>
+          <h3 class="font-semibold text-sm text-white">Luxury Seating</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- Collections / Products -->
+    <section
+      id="collections"
+      class="py-16 bg-white flex-grow w-full overflow-hidden"
+    >
+      <div class="container mx-auto">
+        <div class="text-center mb-12">
+          <span
+            class="text-gold-600 font-semibold tracking-wider text-sm uppercase"
+            >Our Portfolio</span
+          >
+          <h2 class="font-serif text-3xl md:text-4xl font-bold text-black mt-2">
+            Crafted for Your Home
+          </h2>
+        </div>
+
+        <!-- Categories Filter -->
+        <div
+          class="flex flex-wrap justify-center gap-3 mb-10"
+          id="category-filters"
+        >
+          <button
+            data-category="all"
+            class="category-btn category-active px-4 md:px-6 py-2 rounded-full border border-gray-200 text-xs md:text-sm font-bold hover:bg-black hover:text-gold-500 transition-all"
+          >
+            All
+          </button>
+          <button
+            data-category="interiors"
+            class="category-btn px-4 md:px-6 py-2 rounded-full border border-gray-200 text-slate-600 text-xs md:text-sm font-medium hover:bg-black hover:text-gold-500 transition-all"
+          >
+            Interiors
+          </button>
+          <button
+            data-category="theatre"
+            class="category-btn px-4 md:px-6 py-2 rounded-full border border-gray-200 text-slate-600 text-xs md:text-sm font-medium hover:bg-black hover:text-gold-500 transition-all"
+          >
+            Home Theatre
+          </button>
+          <button
+            data-category="furniture"
+            class="category-btn px-4 md:px-6 py-2 rounded-full border border-gray-200 text-slate-600 text-xs md:text-sm font-medium hover:bg-black hover:text-gold-500 transition-all"
+          >
+            Furniture
+          </button>
+          <button
+            data-category="curtains"
+            class="category-btn px-4 md:px-6 py-2 rounded-full border border-gray-200 text-slate-600 text-xs md:text-sm font-medium hover:bg-black hover:text-gold-500 transition-all"
+          >
+            Curtains
+          </button>
+        </div>
+
+        <!-- Product Grid -->
+        <div
+          id="product-grid"
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8"
+        >
+          <!-- Products will be injected here via JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      id="contact"
+      class="bg-black text-gray-400 py-12 border-t border-gray-800 w-full overflow-hidden"
+    >
+      <div class="container mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+          <div>
+            <div class="flex items-center gap-2 mb-4 text-gold-500">
+              <i class="fa-solid fa-crown text-2xl"></i>
+              <span class="font-serif font-bold text-xl text-white"
+                >GANGARAM ENTERPRISES</span
+              >
+            </div>
+            <p class="text-sm">
+              Home Interiors & Furniture based in Metpalle. <br />We design for
+              your comfort.
+            </p>
+          </div>
+
+          <div>
+            <h4 class="text-white font-semibold mb-4">Our Services</h4>
+            <ul class="space-y-2 text-sm">
+              <li>Indoor Ceiling (POP/Gypsum)</li>
+              <li>Modular Kitchens & Cupboards</li>
+              <li>Home Theatre & Audio Systems</li>
+              <li>UPVC Windows & Glass Railing</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="text-white font-semibold mb-4">Contact Aravind Reddy</h4>
+            <ul class="space-y-3 text-sm">
+              <li class="flex items-start gap-3">
+                <i class="fa-solid fa-phone mt-1 text-gold-500"></i>
+                <span class="text-white font-bold text-lg">96400 44469</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <i class="fa-solid fa-envelope text-gold-500"></i>
+                <span>aravindreddysoma@gmail.com</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <i class="fa-solid fa-location-dot text-gold-500"></i>
+                <span>Metpalle, Dist:Jagtial, Telangana, 505325</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="border-t border-gray-800 pt-8 flex justify-between items-center text-xs"
+        >
+          <p>&copy; 2024 Luxe Living Interiors. All rights reserved.</p>
+          <div class="flex gap-4">
+            <i
+              class="fa-brands fa-whatsapp text-lg hover:text-green-500 cursor-pointer"
+            ></i>
+            <i
+              class="fa-brands fa-instagram text-lg hover:text-pink-500 cursor-pointer"
+            ></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Mobile Menu Overlay -->
+    <div
+      id="mobile-menu-overlay"
+      class="fixed inset-0 bg-black/70 z-[60] hidden transition-opacity duration-300 opacity-0"
+    ></div>
+
+    <!-- Mobile Menu Drawer -->
+    <div
+      id="mobile-menu-drawer"
+      class="fixed top-0 right-0 h-full w-full sm:w-[400px] bg-white z-[70] shadow-2xl transform mobile-menu-closed flex flex-col"
+    >
+      <div
+        class="p-5 border-b border-gray-100 flex justify-between items-center bg-black text-white"
+      >
+        <h3 class="font-serif text-xl font-bold text-gold-500">Menu</h3>
+        <button
+          id="close-mobile-menu-btn"
+          class="w-8 h-8 flex items-center justify-center rounded-full hover:bg-white/10 text-gray-300 hover:text-white transition-colors"
+        >
+          <i class="fa-solid fa-xmark text-xl"></i>
+        </button>
+      </div>
+      <div class="flex-grow overflow-y-auto p-5 space-y-4">
+        <a
+          href="#collections"
+          class="mobile-menu-link flex items-center gap-3 px-4 py-3 text-slate-800 font-semibold hover:bg-gold-500 hover:text-black transition-all rounded-sm border-b border-gray-100"
+        >
+          <i class="fa-solid fa-briefcase text-gold-500 w-5"></i>
+          <span>Services</span>
+        </a>
+        <a
+          href="#contact"
+          class="mobile-menu-link flex items-center gap-3 px-4 py-3 text-slate-800 font-semibold hover:bg-gold-500 hover:text-black transition-all rounded-sm border-b border-gray-100"
+        >
+          <i class="fa-solid fa-location-dot text-gold-500 w-5"></i>
+          <span>Contact (Address)</span>
+        </a>
+        <a
+          href="https://wa.me/919640044469"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="mobile-menu-link flex items-center gap-3 px-4 py-3 text-slate-800 font-semibold hover:bg-green-500 hover:text-white transition-all rounded-sm border-b border-gray-100"
+        >
+          <i class="fa-brands fa-whatsapp text-green-500 w-5"></i>
+          <span>Enquiry now</span>
+        </a>
+        <a
+          href="tel:+919640044469"
+          class="mobile-menu-link flex items-center gap-3 px-4 py-3 text-slate-800 font-semibold hover:bg-gold-500 hover:text-black transition-all rounded-sm"
+        >
+          <i class="fa-solid fa-phone text-gold-500 w-5"></i>
+          <span>Call Us</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Shopping Cart Sidebar -->
+    <div
+      id="cart-overlay"
+      class="fixed inset-0 bg-black/70 z-[60] hidden transition-opacity duration-300 opacity-0"
+    ></div>
+    <div
+      id="cart-drawer"
+      class="fixed top-0 right-0 h-full w-full sm:w-[400px] bg-white z-[70] shadow-2xl transform cart-closed flex flex-col"
+    >
+      <div
+        class="p-5 border-b border-gray-100 flex justify-between items-center bg-black text-white"
+      >
+        <h3 class="font-serif text-xl font-bold text-gold-500">Inquiry List</h3>
+        <button
+          id="close-cart-btn"
+          class="w-8 h-8 flex items-center justify-center rounded-full hover:bg-white/10 text-gray-300 hover:text-white transition-colors"
+        >
+          <i class="fa-solid fa-xmark text-xl"></i>
+        </button>
+      </div>
+      <div id="cart-items" class="flex-grow overflow-y-auto p-5 space-y-4">
+        <div
+          id="cart-empty-state"
+          class="flex flex-col items-center justify-center h-full text-center text-slate-400"
+        >
+          <i
+            class="fa-solid fa-clipboard-list text-6xl mb-4 text-slate-200"
+          ></i>
+          <p class="text-lg font-medium text-slate-600">No items selected</p>
+          <p class="text-sm mb-6">Add items to request a quote.</p>
+          <button
+            id="start-shopping-btn"
+            class="bg-black text-gold-500 px-6 py-2 rounded-sm text-sm font-bold hover:bg-gray-900 transition-colors"
+          >
+            Browse Services
+          </button>
+        </div>
+      </div>
+      <div
+        id="cart-footer"
+        class="p-5 border-t border-gray-100 bg-gray-50 hidden"
+      >
+        <div
+          class="flex justify-between items-center mb-6 text-xl font-serif font-bold text-slate-900"
+        >
+          <span>Items</span>
+          <span id="cart-total-count">0</span>
+        </div>
+        <button
+          id="checkout-btn"
+          class="w-full bg-gold-500 text-black py-3 rounded-sm font-bold shadow hover:bg-gold-600 transition-colors flex justify-center items-center gap-2"
+        >
+          Request Quote via WhatsApp <i class="fa-brands fa-whatsapp"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- WhatsApp Enquiry Button -->
+    <a
+      id="whatsapp-enquiry-btn"
+      href="https://wa.me/919640044469"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="fixed bottom-8 right-5 z-[100] bg-green-500 hover:bg-green-600 text-white rounded-full shadow-2xl border-2 border-white hover:scale-110 transition-all flex items-center justify-center group relative px-4 py-3 gap-2"
+      style="
+        display: flex !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        min-width: 140px;
+        position: fixed !important;
+      "
+    >
+      <i class="fa-brands fa-whatsapp text-2xl"></i>
+      <span class="text-xs font-bold whitespace-nowrap">Enquiry now</span>
+      <div
+        class="absolute -top-12 right-0 bg-black text-white text-xs px-3 py-2 rounded-lg shadow-lg opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap border border-gold-500/50"
+      >
+        Enquiry now
+        <div
+          class="absolute bottom-0 right-4 transform translate-y-1/2 rotate-45 w-2 h-2 bg-black border-r border-b border-gold-500/50"
+        ></div>
+      </div>
+    </a>
+
+    <!-- Notification Toast -->
+    <div
+      id="toast"
+      class="fixed bottom-5 left-1/2 transform -translate-x-1/2 bg-black text-white px-6 py-3 rounded-md shadow-lg z-[80] translate-y-20 opacity-0 transition-all duration-300 flex items-center gap-3 w-max max-w-[90%] border border-gold-500/50"
+    >
+      <i class="fa-solid fa-circle-check text-gold-500"></i>
+      <span id="toast-message" class="text-sm">Added to list</span>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
