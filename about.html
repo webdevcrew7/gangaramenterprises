@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Learn about Gangaram Enterprises - Premium home interiors, furniture, and modular kitchen solutions in Metpalle, Jagtial, Telangana. Led by Aravind Reddy." />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+
+    <title>About Us | Gangaram Enterprises – Home Interiors & Furniture</title>
+
+    <link rel="icon" type="image/png" href="favicon.ico" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        royal: {
+                            800: '#000000',
+                            900: '#111111',
+                        },
+                        gold: {
+                            400: '#fbbf24',
+                            500: '#c5a059',
+                            600: '#b08d55',
+                        }
+                    }
+                }
+            }
+        };
+    </script>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="bg-gray-50 text-slate-800 antialiased font-sans flex flex-col min-h-screen overflow-x-hidden">
+    <!-- Navigation -->
+    <nav
+        class="fixed top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm duration-300 border-b border-gold-500/20 w-full overflow-hidden">
+        <div class="container mx-auto py-2 md:py-3 flex justify-between items-center relative">
+            <!-- Left Side: Contact Details (Desktop) -->
+            <div class="hidden md:flex flex-col justify-center text-xs text-slate-600 font-medium space-y-1">
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-user text-gold-500"></i>
+                    <span class="font-bold text-black">Aravind Reddy</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-phone text-gold-500"></i>
+                    <span class="font-bold">+91 96400 44469</span>
+                </div>
+            </div>
+
+            <!-- Logo Section -->
+            <a href="index.html" class="logo-center" aria-label="Gangaram Enterprises - Home">
+                <div class="logo-text">
+                    <p class="brand-name">GangaramEnterprises</p>
+                    <p class="brand-sub">Home Interiors &amp; Furniture</p>
+                </div>
+            </a>
+
+            <!-- Right Side: Menu -->
+            <div class="flex items-center gap-6">
+                <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-600">
+                    <a href="about.html" class="text-gold-600 border-b-2 border-gold-500 pb-1">About</a>
+                    <a href="services.html" class="hover:text-gold-600 transition-colors">Services</a>
+                    <a href="contact.html" class="hover:text-gold-600 transition-colors">Contact</a>
+                </div>
+
+                <!-- Mobile Hamburger Button -->
+                <button id="mobile-menu-btn"
+                    class="md:hidden p-2 text-slate-900 focus:outline-none hover:text-gold-600 transition-colors"
+                    aria-label="Toggle menu">
+                    <i id="mobile-menu-icon" class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-[50vh] flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=2000&auto=format&fit=crop"
+                alt="Interior Design" class="w-full h-full object-cover object-center" />
+            <div class="absolute inset-0 bg-gradient-to-r from-black/70 to-black/50"></div>
+        </div>
+        <div class="container mx-auto z-10 text-center text-white px-4 pt-20">
+            <span class="text-gold-400 font-medium tracking-wider uppercase text-sm">Our Story</span>
+            <h1 class="font-serif text-4xl md:text-6xl font-bold mt-4">About Us</h1>
+            <p class="mt-4 text-white/80 max-w-xl mx-auto">Crafting beautiful spaces since 2015</p>
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <!-- Image -->
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1000&auto=format&fit=crop"
+                        alt="Our Workshop" class="rounded-lg shadow-2xl w-full h-[400px] object-cover" />
+                    <div
+                        class="absolute -bottom-6 -right-6 bg-gold-500 text-black p-6 rounded-lg shadow-xl hidden md:block">
+                        <p class="text-3xl font-bold font-serif">8+</p>
+                        <p class="text-sm font-medium">Years of Excellence</p>
+                    </div>
+                </div>
+
+                <!-- Content -->
+                <div>
+                    <span class="text-gold-600 font-semibold tracking-wider text-sm uppercase">Who We Are</span>
+                    <h2 class="font-serif text-3xl md:text-4xl font-bold text-black mt-2 mb-6">
+                        Transforming Houses into Homes
+                    </h2>
+                    <p class="text-slate-600 leading-relaxed mb-6">
+                        <strong>Gangaram Enterprises</strong> is a trusted name in home interiors and furniture
+                        solutions,
+                        proudly serving Metpalle, Jagtial, and surrounding regions of Telangana. Founded and led by
+                        <strong>Aravind Reddy</strong>, we bring a perfect blend of traditional craftsmanship and modern
+                        design
+                        sensibilities to every project we undertake.
+                    </p>
+                    <p class="text-slate-600 leading-relaxed mb-6">
+                        Our journey began with a simple vision: to make premium interior design accessible to every
+                        home.
+                        Today, we've transformed hundreds of spaces, from cozy apartments to luxurious villas, always
+                        maintaining our commitment to quality, innovation, and customer satisfaction.
+                    </p>
+                    <div class="flex flex-wrap gap-6 mt-8">
+                        <div class="text-center">
+                            <p class="text-3xl font-bold font-serif text-gold-600">500+</p>
+                            <p class="text-sm text-slate-500">Happy Clients</p>
+                        </div>
+                        <div class="text-center">
+                            <p class="text-3xl font-bold font-serif text-gold-600">1000+</p>
+                            <p class="text-sm text-slate-500">Projects Completed</p>
+                        </div>
+                        <div class="text-center">
+                            <p class="text-3xl font-bold font-serif text-gold-600">100%</p>
+                            <p class="text-sm text-slate-500">Satisfaction Rate</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <span class="text-gold-600 font-semibold tracking-wider text-sm uppercase">Our Values</span>
+                <h2 class="font-serif text-3xl md:text-4xl font-bold text-black mt-2">
+                    What Drives Us
+                </h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Value 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="w-14 h-14 bg-gold-500/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-gem text-2xl text-gold-600"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold mb-3">Quality First</h3>
+                    <p class="text-slate-600 leading-relaxed">
+                        We use only premium materials and employ skilled craftsmen to ensure every piece meets our high
+                        standards.
+                    </p>
+                </div>
+
+                <!-- Value 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="w-14 h-14 bg-gold-500/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-handshake text-2xl text-gold-600"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold mb-3">Customer Focus</h3>
+                    <p class="text-slate-600 leading-relaxed">
+                        Your vision is our blueprint. We work closely with you to understand and exceed your
+                        expectations.
+                    </p>
+                </div>
+
+                <!-- Value 3 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="w-14 h-14 bg-gold-500/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-lightbulb text-2xl text-gold-600"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold mb-3">Innovation</h3>
+                    <p class="text-slate-600 leading-relaxed">
+                        We stay updated with the latest trends and technologies to bring you modern, functional designs.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meet the Founder -->
+    <section class="py-20 bg-black text-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <span class="text-gold-400 font-semibold tracking-wider text-sm uppercase">Leadership</span>
+                <h2 class="font-serif text-3xl md:text-4xl font-bold mt-2 mb-8">
+                    Meet Aravind Reddy
+                </h2>
+                <div class="w-32 h-32 mx-auto mb-8 rounded-full border-4 border-gold-500 overflow-hidden">
+                    <div class="w-full h-full bg-gold-500/20 flex items-center justify-center">
+                        <i class="fa-solid fa-user text-5xl text-gold-500"></i>
+                    </div>
+                </div>
+                <p class="text-gray-300 leading-relaxed text-lg max-w-2xl mx-auto mb-8">
+                    With over 8 years of experience in the interior design industry, Aravind Reddy founded Gangaram
+                    Enterprises
+                    with a passion for creating beautiful, functional living spaces. His hands-on approach and attention
+                    to
+                    detail have made the company a trusted name in Telangana.
+                </p>
+                <a href="tel:+919640044469"
+                    class="inline-flex items-center gap-2 bg-gold-500 text-black px-8 py-3 rounded font-semibold hover:bg-gold-400 transition-colors">
+                    <i class="fa-solid fa-phone"></i>
+                    Connect with Aravind
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-gradient-to-r from-gold-600 to-gold-500">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="font-serif text-3xl md:text-4xl font-bold text-black mb-4">
+                Ready to Transform Your Space?
+            </h2>
+            <p class="text-black/80 mb-8 max-w-xl mx-auto">
+                Let's discuss your project and bring your vision to life.
+            </p>
+            <a href="contact.html"
+                class="inline-flex items-center gap-2 bg-black text-gold-500 px-8 py-3 rounded font-semibold hover:bg-gray-900 transition-colors">
+                Get in Touch
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-gray-400 py-12 border-t border-gray-800 w-full">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center gap-2 mb-4 text-gold-500">
+                        <i class="fa-solid fa-crown text-2xl"></i>
+                        <span class="font-serif font-bold text-xl text-white">GANGARAM ENTERPRISES</span>
+                    </div>
+                    <p class="text-sm">
+                        Home Interiors & Furniture based in Metpalle. <br />We design for your comfort.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="index.html" class="hover:text-gold-500 transition-colors">Home</a></li>
+                        <li><a href="about.html" class="hover:text-gold-500 transition-colors">About Us</a></li>
+                        <li><a href="services.html" class="hover:text-gold-500 transition-colors">Services</a></li>
+                        <li><a href="contact.html" class="hover:text-gold-500 transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-phone mt-1 text-gold-500"></i>
+                            <span class="text-white font-bold text-lg">96400 44469</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-envelope text-gold-500"></i>
+                            <span>aravindreddysoma@gmail.com</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-location-dot text-gold-500"></i>
+                            <span>Metpalle, Dist:Jagtial, Telangana</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 flex justify-between items-center text-xs">
+                <p>&copy; 2024 Gangaram Enterprises. All rights reserved.</p>
+                <div class="flex gap-4">
+                    <a href="https://wa.me/919640044469" target="_blank"><i
+                            class="fa-brands fa-whatsapp text-lg hover:text-green-500 cursor-pointer"></i></a>
+                    <i class="fa-brands fa-instagram text-lg hover:text-pink-500 cursor-pointer"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu-overlay"
+        class="fixed inset-0 bg-black/70 z-[60] hidden transition-opacity duration-300 opacity-0"></div>
+
+    <!-- Mobile Menu Drawer -->
+    <div id="mobile-menu-drawer"
+        class="fixed top-0 right-0 h-full w-full sm:w-[400px] bg-white z-[70] shadow-2xl transform mobile-menu-closed flex flex-col">
+        <div class="p-5 border-b border-gray-100 flex justify-between items-center bg-black text-white">
+            <h3 class="font-serif text-xl font-bold text-gold-500">Menu</h3>
+            <button id="close-mobile-menu-btn"
+                class="w-8 h-8 flex items-center justify-center rounded-full hover:bg-white/10 text-gray-300 hover:text-white transition-colors">
+                <i class="fa-solid fa-xmark text-xl"></i>
+            </button>
+        </div>
+        <div class="flex-grow overflow-y-auto p-5 space-y-4">
+            <a href="index.html"
+                class="mobile-menu-link flex items-center gap-3 px-4 py-3 text-slate-800 font-semibold hover:bg-gold-500 hover:text-black transition-all rounded-sm border-b border-gray-100">
+                <i class="fa-solid fa-home text-gold-500 w-5"></i>
+                <span>Home</span>
+            </a>
+            <a href="about.html"
+                class="mobile-menu-link flex items-center gap-3 px-4 py-3 text-slate-800 font-semibold bg-gold-100 rounded-sm border-b border-gray-100">
+                <i class="fa-solid fa-info-circle text-gold-500 w-5"></i>
+                <span>About Us</span>
+            </a>
+            <a href="services.html"
+                class="mobile-menu-link flex items-center gap-3 px-4 py-3 text-slate-800 font-semibold hover:bg-gold-500 hover:text-black transition-all rounded-sm border-b border-gray-100">
+                <i class="fa-solid fa-briefcase text-gold-500 w-5"></i>
+                <span>Services</span>
+            </a>
+            <a href="contact.html"
+                class="mobile-menu-link flex items-center gap-3 px-4 py-3 text-slate-800 font-semibold hover:bg-gold-500 hover:text-black transition-all rounded-sm border-b border-gray-100">
+                <i class="fa-solid fa-location-dot text-gold-500 w-5"></i>
+                <span>Contact</span>
+            </a>
+            <a href="https://wa.me/919640044469" target="_blank" rel="noopener noreferrer"
+                class="mobile-menu-link flex items-center gap-3 px-4 py-3 text-slate-800 font-semibold hover:bg-green-500 hover:text-white transition-all rounded-sm border-b border-gray-100">
+                <i class="fa-brands fa-whatsapp text-green-500 w-5"></i>
+                <span>WhatsApp</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Contact Buttons -->
+    <div class="fixed bottom-8 right-5 z-[100] flex flex-col gap-3">
+        <a href="tel:+919640044469"
+            class="bg-blue-500 hover:bg-blue-600 text-white w-14 h-14 rounded-full shadow-lg border-2 border-white transition-all duration-300 ease-out flex items-center justify-center hover:shadow-2xl hover:-translate-y-1">
+            <i class="fa-solid fa-phone text-xl"></i>
+        </a>
+        <a href="https://wa.me/919640044469" target="_blank" rel="noopener noreferrer"
+            class="bg-green-500 hover:bg-green-600 text-white w-14 h-14 rounded-full shadow-lg border-2 border-white transition-all duration-300 ease-out flex items-center justify-center hover:shadow-2xl hover:-translate-y-1">
+            <i class="fa-brands fa-whatsapp text-2xl"></i>
+        </a>
+    </div>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const closeMobileMenuBtn = document.getElementById('close-mobile-menu-btn');
+        const mobileMenuDrawer = document.getElementById('mobile-menu-drawer');
+        const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
+
+        function openMobileMenu() {
+            mobileMenuDrawer.classList.remove('mobile-menu-closed');
+            mobileMenuDrawer.classList.add('mobile-menu-open');
+            mobileMenuOverlay.classList.remove('hidden', 'opacity-0');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeMobileMenu() {
+            mobileMenuDrawer.classList.remove('mobile-menu-open');
+            mobileMenuDrawer.classList.add('mobile-menu-closed');
+            mobileMenuOverlay.classList.add('opacity-0');
+            setTimeout(() => mobileMenuOverlay.classList.add('hidden'), 300);
+            document.body.style.overflow = '';
+        }
+
+        mobileMenuBtn.addEventListener('click', openMobileMenu);
+        closeMobileMenuBtn.addEventListener('click', closeMobileMenu);
+        mobileMenuOverlay.addEventListener('click', closeMobileMenu);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Explore our services - Modular Kitchens, Home Interiors, Home Theatre, Furniture at Gangaram Enterprises." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Our Services | Gangaram Enterprises</title>
+    <link rel="icon" type="image/png" href="favicon.ico" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'], serif: ['Playfair Display', 'serif'] },
+                    colors: { royal: { 800: '#000000', 900: '#111111' }, gold: { 400: '#fbbf24', 500: '#c5a059', 600: '#b08d55' } }
+                }
+            }
+        };
+    </script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="bg-gray-50 text-slate-800 antialiased font-sans flex flex-col min-h-screen overflow-x-hidden">
+    <!-- Navigation -->
+    <nav class="fixed top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-gold-500/20 w-full">
+        <div class="container mx-auto py-2 md:py-3 flex justify-between items-center relative">
+            <div class="hidden md:flex flex-col justify-center text-xs text-slate-600 font-medium space-y-1">
+                <div class="flex items-center gap-2"><i class="fa-solid fa-user text-gold-500"></i><span
+                        class="font-bold text-black">Aravind Reddy</span></div>
+                <div class="flex items-center gap-2"><i class="fa-solid fa-phone text-gold-500"></i><span
+                        class="font-bold">+91 96400 44469</span></div>
+            </div>
+            <a href="index.html" class="logo-center">
+                <div class="logo-text">
+                    <p class="brand-name">GangaramEnterprises</p>
+                    <p class="brand-sub">Home Interiors &amp; Furniture</p>
+                </div>
+            </a>
+            <div class="flex items-center gap-6">
+                <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-600">
+                    <a href="about.html" class="hover:text-gold-600 transition-colors">About</a>
+                    <a href="services.html" class="text-gold-600 border-b-2 border-gold-500 pb-1">Services</a>
+                    <a href="contact.html" class="hover:text-gold-600 transition-colors">Contact</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden p-2 text-slate-900"><i
+                        class="fa-solid fa-bars text-xl"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="relative min-h-[50vh] flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?q=80&w=2000&auto=format&fit=crop"
+                alt="Services" class="w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-gradient-to-r from-black/70 to-black/50"></div>
+        </div>
+        <div class="container mx-auto z-10 text-center text-white px-4 pt-20">
+            <span class="text-gold-400 font-medium tracking-wider uppercase text-sm">What We Offer</span>
+            <h1 class="font-serif text-4xl md:text-6xl font-bold mt-4">Our Services</h1>
+            <p class="mt-4 text-white/80 max-w-xl mx-auto">Complete home transformation solutions</p>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <span class="text-gold-600 font-semibold tracking-wider text-sm uppercase">Comprehensive
+                    Solutions</span>
+                <h2 class="font-serif text-3xl md:text-4xl font-bold text-black mt-2">Everything Your Home Needs</h2>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Modular Kitchen -->
+                <div class="group bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all">
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="assets/Interiors/Design1.jpg" alt="Modular Kitchen"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <h3 class="absolute bottom-4 left-4 font-serif text-xl font-bold text-white">Modular Kitchen
+                        </h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-slate-600 text-sm mb-4">Custom-designed modular kitchens with premium finish,
+                            soft-close mechanisms, and smart storage.</p>
+                        <p class="text-gold-600 font-bold text-lg">Starting ₹49,999</p>
+                    </div>
+                </div>
+                <!-- Home Theatre -->
+                <div class="group bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all">
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="assets/Home Theatre/HT1.jpg" alt="Home Theatre"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <h3 class="absolute bottom-4 left-4 font-serif text-xl font-bold text-white">Home Theatre</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-slate-600 text-sm mb-4">Complete home theatre setups with 4K projectors, Dolby
+                            Atmos sound, and acoustic treatment.</p>
+                        <p class="text-gold-600 font-bold text-lg">Starting ₹89,999</p>
+                    </div>
+                </div>
+                <!-- Furniture -->
+                <div class="group bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all">
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="assets/Furniture/sofa1.jpg" alt="Furniture"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <h3 class="absolute bottom-4 left-4 font-serif text-xl font-bold text-white">Premium Furniture
+                        </h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-slate-600 text-sm mb-4">Handcrafted sofas, beds, dining tables. Quality
+                            craftsmanship that lasts generations.</p>
+                        <p class="text-gold-600 font-bold text-lg">Starting ₹24,999</p>
+                    </div>
+                </div>
+                <!-- Curtains -->
+                <div class="group bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all">
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="assets/Curtains/Curtain1.jpg" alt="Curtains"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <h3 class="absolute bottom-4 left-4 font-serif text-xl font-bold text-white">Curtains & Blinds
+                        </h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-slate-600 text-sm mb-4">Designer curtains, roller blinds, and motorized options
+                            for the perfect finishing touch.</p>
+                        <p class="text-gold-600 font-bold text-lg">Custom Quotes</p>
+                    </div>
+                </div>
+                <!-- Home Interiors -->
+                <div class="group bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all">
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?q=80&w=800"
+                            alt="Interiors"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <h3 class="absolute bottom-4 left-4 font-serif text-xl font-bold text-white">Home Interiors</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-slate-600 text-sm mb-4">Complete interior design for living rooms, bedrooms, and
+                            false ceiling (POP/Gypsum).</p>
+                        <p class="text-gold-600 font-bold text-lg">Custom Quotes</p>
+                    </div>
+                </div>
+                <!-- Additional -->
+                <div class="group bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all">
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=800"
+                            alt="More Services"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <h3 class="absolute bottom-4 left-4 font-serif text-xl font-bold text-white">More Services</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-slate-600 text-sm mb-4">UPVC Windows, Glass Railings, Colors & Painting -
+                            complete home solutions.</p>
+                        <p class="text-gold-600 font-bold text-lg">Custom Quotes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <span class="text-gold-600 font-semibold tracking-wider text-sm uppercase">How We Work</span>
+                <h2 class="font-serif text-3xl md:text-4xl font-bold text-black mt-2">Our Process</h2>
+            </div>
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div
+                        class="w-16 h-16 bg-gold-500 text-black rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+                        1</div>
+                    <h3 class="font-semibold text-lg mb-2">Consultation</h3>
+                    <p class="text-slate-600 text-sm">Free consultation to understand your vision</p>
+                </div>
+                <div class="text-center">
+                    <div
+                        class="w-16 h-16 bg-gold-500 text-black rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+                        2</div>
+                    <h3 class="font-semibold text-lg mb-2">Design</h3>
+                    <p class="text-slate-600 text-sm">Custom designs and 3D visualizations</p>
+                </div>
+                <div class="text-center">
+                    <div
+                        class="w-16 h-16 bg-gold-500 text-black rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+                        3</div>
+                    <h3 class="font-semibold text-lg mb-2">Production</h3>
+                    <p class="text-slate-600 text-sm">Crafting with premium materials</p>
+                </div>
+                <div class="text-center">
+                    <div
+                        class="w-16 h-16 bg-gold-500 text-black rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+                        4</div>
+                    <h3 class="font-semibold text-lg mb-2">Installation</h3>
+                    <p class="text-slate-600 text-sm">Professional installation and handover</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-16 bg-black">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="font-serif text-3xl md:text-4xl font-bold text-white mb-4">Ready to Start Your Project?</h2>
+            <p class="text-gray-400 mb-8">Get a free consultation and quote today.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://wa.me/919640044469" target="_blank"
+                    class="inline-flex items-center justify-center gap-2 bg-green-500 text-white px-8 py-3 rounded font-semibold hover:bg-green-600"><i
+                        class="fa-brands fa-whatsapp text-xl"></i>WhatsApp Us</a>
+                <a href="contact.html"
+                    class="inline-flex items-center justify-center gap-2 bg-gold-500 text-black px-8 py-3 rounded font-semibold hover:bg-gold-400"><i
+                        class="fa-solid fa-envelope"></i>Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-gray-400 py-12 border-t border-gray-800">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center gap-2 mb-4 text-gold-500"><i
+                            class="fa-solid fa-crown text-2xl"></i><span
+                            class="font-serif font-bold text-xl text-white">GANGARAM ENTERPRISES</span></div>
+                    <p class="text-sm">Home Interiors & Furniture based in Metpalle.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="index.html" class="hover:text-gold-500">Home</a></li>
+                        <li><a href="about.html" class="hover:text-gold-500">About</a></li>
+                        <li><a href="services.html" class="hover:text-gold-500">Services</a></li>
+                        <li><a href="contact.html" class="hover:text-gold-500">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-phone text-gold-500"></i><span
+                                class="text-white font-bold">96400 44469</span></li>
+                        <li class="flex items-center gap-3"><i
+                                class="fa-solid fa-envelope text-gold-500"></i><span>aravindreddysoma@gmail.com</span>
+                        </li>
+                        <li class="flex items-center gap-3"><i
+                                class="fa-solid fa-location-dot text-gold-500"></i><span>Metpalle, Jagtial,
+                                Telangana</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 flex justify-between items-center text-xs">
+                <p>&copy; 2024 Gangaram Enterprises. All rights reserved.</p>
+                <div class="flex gap-4">
+                    <a href="https://wa.me/919640044469" target="_blank"><i
+                            class="fa-brands fa-whatsapp text-lg hover:text-green-500"></i></a>
+                    <i class="fa-brands fa-instagram text-lg hover:text-pink-500 cursor-pointer"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu-overlay" class="fixed inset-0 bg-black/70 z-[60] hidden opacity-0"></div>
+    <div id="mobile-menu-drawer"
+        class="fixed top-0 right-0 h-full w-full sm:w-[400px] bg-white z-[70] shadow-2xl mobile-menu-closed flex flex-col">
+        <div class="p-5 border-b flex justify-between items-center bg-black text-white">
+            <h3 class="font-serif text-xl font-bold text-gold-500">Menu</h3>
+            <button id="close-mobile-menu-btn"
+                class="w-8 h-8 flex items-center justify-center rounded-full hover:bg-white/10"><i
+                    class="fa-solid fa-xmark text-xl"></i></button>
+        </div>
+        <div class="flex-grow p-5 space-y-4">
+            <a href="index.html" class="flex items-center gap-3 px-4 py-3 font-semibold border-b"><i
+                    class="fa-solid fa-home text-gold-500 w-5"></i>Home</a>
+            <a href="about.html" class="flex items-center gap-3 px-4 py-3 font-semibold border-b"><i
+                    class="fa-solid fa-info-circle text-gold-500 w-5"></i>About</a>
+            <a href="services.html" class="flex items-center gap-3 px-4 py-3 font-semibold bg-gold-100 border-b"><i
+                    class="fa-solid fa-briefcase text-gold-500 w-5"></i>Services</a>
+            <a href="contact.html" class="flex items-center gap-3 px-4 py-3 font-semibold border-b"><i
+                    class="fa-solid fa-location-dot text-gold-500 w-5"></i>Contact</a>
+            <a href="https://wa.me/919640044469" target="_blank"
+                class="flex items-center gap-3 px-4 py-3 font-semibold"><i
+                    class="fa-brands fa-whatsapp text-green-500 w-5"></i>WhatsApp</a>
+        </div>
+    </div>
+
+    <!-- Contact Buttons -->
+    <div class="fixed bottom-8 right-5 z-[100] flex flex-col gap-3">
+        <a href="tel:+919640044469"
+            class="bg-blue-500 hover:bg-blue-600 text-white w-14 h-14 rounded-full shadow-lg border-2 border-white flex items-center justify-center"><i
+                class="fa-solid fa-phone text-xl"></i></a>
+        <a href="https://wa.me/919640044469" target="_blank"
+            class="bg-green-500 hover:bg-green-600 text-white w-14 h-14 rounded-full shadow-lg border-2 border-white flex items-center justify-center"><i
+                class="fa-brands fa-whatsapp text-2xl"></i></a>
+    </div>
+
+    <script>
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const closeMobileMenuBtn = document.getElementById('close-mobile-menu-btn');
+        const mobileMenuDrawer = document.getElementById('mobile-menu-drawer');
+        const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
+        function openMobileMenu() { mobileMenuDrawer.classList.remove('mobile-menu-closed'); mobileMenuDrawer.classList.add('mobile-menu-open'); mobileMenuOverlay.classList.remove('hidden', 'opacity-0'); document.body.style.overflow = 'hidden'; }
+        function closeMobileMenu() { mobileMenuDrawer.classList.remove('mobile-menu-open'); mobileMenuDrawer.classList.add('mobile-menu-closed'); mobileMenuOverlay.classList.add('opacity-0'); setTimeout(() => mobileMenuOverlay.classList.add('hidden'), 300); document.body.style.overflow = ''; }
+        mobileMenuBtn.addEventListener('click', openMobileMenu);
+        closeMobileMenuBtn.addEventListener('click', closeMobileMenu);
+        mobileMenuOverlay.addEventListener('click', closeMobileMenu);
+    </script>
+</body>
+
+</html>
