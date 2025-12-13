@@ -174,7 +174,7 @@ const products = [
         name: "Curtains – Eyelet Style",
         category: "curtains",
         description: "Premium blackout or sheer fabric with smooth eyelet hangings.",
-        image: "assets/Curtains/curtain1.jpg",
+        image: "assets/Curtains/Curtain1.jpg",
         badge: "Best Seller",
         onSale: true
     },
@@ -183,7 +183,7 @@ const products = [
         name: "Curtains – Pleated / Pinch Pleat",
         category: "curtains",
         description: "Elegant pleated curtains for living rooms and master bedrooms.",
-        image: "assets/Curtains/curtain2.jpg",
+        image: "assets/Curtains/Curtain2.jpg",
         badge: ""
     },
     {
@@ -191,7 +191,7 @@ const products = [
         name: "Window Blinds – Zebra / Roller",
         category: "curtains",
         description: "Dual-layer zebra blinds or roller blinds with smooth chain mechanism.",
-        image: "assets/Curtains/curtain3.jpg",
+        image: "assets/Curtains/Curtain3.jpg",
         badge: "Trending",
         onSale: true
     },
@@ -200,7 +200,7 @@ const products = [
         name: "Roman Blinds",
         category: "curtains",
         description: "Soft fold Roman blinds for contemporary and modern interiors.",
-        image: "assets/Curtains/curtain4.jpg",
+        image: "assets/Curtains/Curtain4.jpg",
         badge: ""
     },
 
