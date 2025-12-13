@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Gangaram Enterprises provides home interior design, modular kitchen solutions and premium furniture in Metpalle, Jagtial, Telangana. Contact us for custom designs and installation." />
+
+  <!-- Preconnect for faster resource loading -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="preconnect" href="https://cdn.tailwindcss.com">
+
+  <!-- <title>Gangaram Enterprises | Home Interiors & Furniture</title> -->
+  <title>Gangaram Enterprises – Home Interiors, Furniture & Modular Kitchens in Metpalle, Telangana</title>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FurnitureStore",
+  "name": "Gangaram Enterprises",
+  "url": "https://gangaramenterprises.in",
+  "telephone": "+919640044469",
+  "email": "aravindreddysoma@gmail.com",
+  "logo": "https://gangaramenterprises.in/assets/Luxe Living Logo.png",
+  "image": "https://gangaramenterprises.in/assets/Luxe Living Logo.png",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Metpalle",
+    "addressLocality": "Metpalle",
+    "addressRegion": "Telangana",
+    "postalCode": "505325",
+    "addressCountry": "IN"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "18.8000",
+    "longitude": "78.9200"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday", "Tuesday", "Wednesday",
+        "Thursday", "Friday", "Saturday"
+      ],
+      "opens": "09:00",
+      "closes": "19:00"
+    }
+  ],
+  "description": "Gangaram Enterprises — Premium home interiors, modular kitchens, furniture and decor services in Metpalle, Telangana. Contact us for design and installation.",
+  "service": [
+    {
+      "@type": "Service",
+      "name": "Home Interiors",
+      "description": "Customized home interior design services including living room, bedroom, kitchen and office interiors."
+    },
+    {
+      "@type": "Service",
+      "name": "Modular Kitchen Design",
+      "description": "Design and installation of modular kitchens tailored to your space and style."
+    },
+    {
+      "@type": "Service",
+      "name": "Furniture Solutions",
+      "description": "Modern and custom furniture for living room, bedroom, office and other spaces."
+    }
+  ],
+  "sameAs": [
+    "https://www.facebook.com/yourprofile",
+    "https://www.instagram.com/yourprofile",
+    "https://www.linkedin.com/in/yourprofile"
+  ]
+}
+</script>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/Luxe Living Logo.png" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            serif: ['Playfair Display', 'serif'],
+          },
+          colors: {
+            royal: {
+              800: '#000000',
+              900: '#111111',
+            },
+            gold: {
+              400: '#fbbf24',
+              500: '#c5a059',
+              600: '#b08d55',
+            }
+          },
+          animation: {
+            'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- Google Fonts: Playfair Display for Headings, Inter for Body -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="bg-gray-50 text-slate-800 antialiased font-sans flex flex-col min-h-screen overflow-x-hidden">
+  <!-- Navigation -->
+  <nav
+    class="fixed top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm duration-300 border-b border-gold-500/20 w-full overflow-hidden">
+    <div class="container mx-auto py-2 md:py-3 flex justify-between items-center relative">
+      <!-- Left Side: Contact Details (Desktop) -->
+      <div class="hidden md:flex flex-col justify-center text-xs text-slate-600 font-medium space-y-1">
+        <div class="flex items-center gap-2">
+          <i class="fa-solid fa-user text-gold-500"></i>
+          <span class="font-bold text-black">Aravind Reddy</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <i class="fa-solid fa-phone text-gold-500"></i>
+          <span class="font-bold">+91 96400 44469</span>
+        </div>
+      </div>
+
+      <!--  Logo Section (Navbar Item) -->
+      <a href="#" class="logo-center" aria-label="Luxe Living - Home">
+        <!-- <div class="logo-img-wrapper">
+            <img
+              src="assets/Luxe Living Logo.png"
+              alt="Luxe Living Logo"
+              class="logo-img"
+            />
+          </div> -->
+        <div class="logo-text">
+          <p class="brand-name">GangaramEnterprises</p>
+          <p class="brand-sub">Home Interiors &amp; Furniture</p>
+        </div>
+      </a>
+      <!-- Right Side: Menu -->
+      <div class="flex items-center gap-6">
+        <!-- Desktop Menu Links -->
+        <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-600">
+          <a href="#collections" class="hover:text-gold-600 transition-colors">Services</a>
+          <!-- <a href="#about" class="hover:text-gold-600 transition-colors">Our Work</a> -->
+          <a href="#contact" class="hover:text-gold-600 transition-colors">Contact</a>
+        </div>
+
+        <!-- Mobile Hamburger Button -->
+        <button id="mobile-menu-btn"
+          class="md:hidden p-2 text-slate-900 focus:outline-none hover:text-gold-600 transition-colors"
+          aria-label="Toggle menu">
+          <i id="mobile-menu-icon" class="fa-solid fa-bars text-xl"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section with Carousel -->
+  <section id="home" class="relative min-h-[85vh] md:min-h-[75vh] flex flex-col overflow-hidden w-full">
+    <div class="absolute inset-0 z-0 w-full">
+      <img src="https://images.unsplash.com/photo-1600210492493-0946911123ea?q=80&w=2000&auto=format&fit=crop"
+        alt="Luxe Interiors" class="w-full h-full object-cover object-center" />
+      <div class="absolute inset-0 bg-gradient-to-r from-black/55 to-black/55"></div>
+    </div>
+
+    <div class="container mx-auto mt-14 pt-20 md:pt-20 z-10 text-white fade-in-up text-center flex-shrink-0">
+      <!-- <h2
+      class="font-serif text-4xl md:text-7xl font-bold  leading-tight"
+      >
+      GangaramEnterprises
+    </h2>  -->
+      <span class="hero-title">We Design for your Comfort</span>
+      <p class="hero-subtext">
+        Premium Sofas, Furniture, Interior design & Decor by Aravind Reddy.
+      </p>
+      <div class="hidden md:flex flex-col sm:flex-row gap-4 justify-center">
+        <button id="explore-services-btn">
+          Explore Services
+        </button>
+      </div>
+      <div id="decor-tip-container" class="mt-6 max-w-lg hidden mx-auto md:mx-0">
+        <div class="bg-black/60 backdrop-blur-md p-4 rounded border-l-4 border-gold-500">
+          <p id="decor-tip-text" class="text-sm italic text-gray-200"></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Flash Sale Carousel - Inside Hero -->
+    <div id="flash-sale-carousel" class="relative z-10 w-full mt-2 md:mt-auto pb-2 md:pb-4">
+      <!-- Mobile padding wrapper -->
+      <div class="p-3 md:p-4">
+        <div class="relative rounded-xl overflow-hidden shadow-2xl">
+          <!-- Carousel Container -->
+          <div id="carousel-track" class="flex transition-transform duration-700 ease-in-out">
+
+            <!-- Slide 1: New Year Sale - Modular Kitchen -->
+            <div class="carousel-slide min-w-full">
+              <div class="sale-banner relative h-[22vh] md:h-[28vh] overflow-hidden cursor-pointer"
+                onclick="scrollToSaleCategory()"
+                style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);">
+                <!-- Decorative Elements -->
+                <div class="absolute inset-0 overflow-hidden pointer-events-none">
+                  <div class="floating-decor" style="top: 10%; left: 5%; animation-delay: 0s;">✨</div>
+                  <div class="floating-decor" style="top: 60%; left: 8%; animation-delay: 0.5s;">🎆</div>
+                  <div class="floating-decor" style="top: 20%; right: 15%; animation-delay: 1s;">🎇</div>
+                  <div class="floating-decor" style="top: 70%; right: 10%; animation-delay: 1.5s;">✨</div>
+                  <div class="falling-leaf" style="left: 15%; animation-delay: 0s;"></div>
+                  <div class="falling-leaf" style="left: 45%; animation-delay: 1s;"></div>
+                  <div class="falling-leaf" style="left: 75%; animation-delay: 2s;"></div>
+                </div>
+
+                <div class="container mx-auto h-full flex items-center justify-center gap-4 md:gap-8 px-4 md:px-8">
+                  <!-- Product Image -->
+                  <div class="relative z-10 w-32 md:w-52 lg:w-64 flex-shrink-0">
+                    <div
+                      class="bg-white rounded-lg shadow-2xl p-2 md:p-3 transform hover:scale-105 transition-transform duration-300">
+                      <img src="assets/Interiors/Design1.jpg" alt="Modular Kitchen"
+                        class="w-full h-24 md:h-36 lg:h-44 object-cover rounded">
+                    </div>
+                  </div>
+
+                  <!-- Content -->
+                  <div class="relative z-10 text-white">
+                    <h4
+                      class="text-lg md:text-2xl lg:text-3xl font-bold text-gold-400 font-serif mb-1 whitespace-nowrap">
+                      Modular Kitchen</h4>
+                    <p class="text-xl md:text-3xl lg:text-4xl font-bold mb-1">Starting <span
+                        class="text-gold-400">₹49,999</span></p>
+                    <p class="text-white/80 text-xs md:text-sm">Premium Finish • Soft Close • Custom Designs</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2: Sankranti Sale - Furniture -->
+            <div class="carousel-slide min-w-full">
+              <div class="sale-banner relative h-[22vh] md:h-[28vh] overflow-hidden cursor-pointer"
+                onclick="scrollToSaleCategory()"
+                style="background: linear-gradient(135deg, #4a1942 0%, #7b2869 50%, #9e4770 100%);">
+                <!-- Decorative Elements -->
+                <div class="absolute inset-0 overflow-hidden pointer-events-none">
+                  <div class="floating-decor" style="top: 15%; left: 10%; animation-delay: 0s;">🪁</div>
+                  <div class="floating-decor" style="top: 55%; left: 5%; animation-delay: 0.7s;">☀️</div>
+                  <div class="floating-decor" style="top: 25%; right: 12%; animation-delay: 1.2s;">🪁</div>
+                  <div class="floating-decor" style="top: 65%; right: 8%; animation-delay: 0.3s;">🌾</div>
+                  <div class="falling-leaf gold-leaf" style="left: 20%; animation-delay: 0.3s;"></div>
+                  <div class="falling-leaf gold-leaf" style="left: 50%; animation-delay: 1.3s;"></div>
+                  <div class="falling-leaf gold-leaf" style="left: 80%; animation-delay: 2.3s;"></div>
+                </div>
+
+                <div class="container mx-auto h-full flex items-center justify-center gap-4 md:gap-8 px-4 md:px-8">
+                  <!-- Product Image -->
+                  <div class="relative z-10 w-32 md:w-52 lg:w-64 flex-shrink-0">
+                    <div
+                      class="bg-white rounded-lg shadow-2xl p-2 md:p-3 transform hover:scale-105 transition-transform duration-300">
+                      <img src="assets/Furniture/sofa1.jpg" alt="Premium Sofa"
+                        class="w-full h-24 md:h-36 lg:h-44 object-cover rounded">
+                    </div>
+                  </div>
+
+                  <!-- Content -->
+                  <div class="relative z-10 text-white">
+                    <h3 class="text-lg md:text-2xl lg:text-3xl font-bold text-yellow-300 font-serif mb-1">Premium Sofas
+                    </h3>
+                    <p class="text-xl md:text-3xl lg:text-4xl font-bold mb-1">From <span
+                        class="text-yellow-300">₹24,999</span></p>
+                    <p class="text-white/80 text-xs md:text-sm">Sankranti Special • 25% OFF • All Variants</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3: Home Theatre -->
+            <div class="carousel-slide min-w-full">
+              <div class="sale-banner relative h-[22vh] md:h-[28vh] overflow-hidden cursor-pointer"
+                onclick="scrollToSaleCategory()"
+                style="background: linear-gradient(135deg, #0d7377 0%, #14919b 50%, #32e0c4 100%);">
+                <!-- Decorative Elements -->
+                <div class="absolute inset-0 overflow-hidden pointer-events-none">
+                  <div class="floating-decor" style="top: 12%; left: 8%; animation-delay: 0.2s;">🎬</div>
+                  <div class="floating-decor" style="top: 50%; left: 5%; animation-delay: 0.9s;">🎵</div>
+                  <div class="floating-decor" style="top: 18%; right: 10%; animation-delay: 1.4s;">🎧</div>
+                  <div class="floating-decor" style="top: 60%; right: 12%; animation-delay: 0.6s;">🎬</div>
+                </div>
+
+                <div class="container mx-auto h-full flex items-center justify-center gap-4 md:gap-8 px-4 md:px-8">
+                  <!-- Product Image -->
+                  <div class="relative z-10 w-32 md:w-52 lg:w-64 flex-shrink-0">
+                    <div
+                      class="bg-white rounded-lg shadow-2xl p-2 md:p-3 transform hover:scale-105 transition-transform duration-300">
+                      <img src="assets/Home Theatre/HT1.jpg" alt="Home Theatre"
+                        class="w-full h-24 md:h-36 lg:h-44 object-cover rounded">
+                    </div>
+                  </div>
+
+                  <!-- Content -->
+                  <div class="relative z-10 text-white">
+                    <h3 class="text-lg md:text-2xl lg:text-3xl font-bold text-emerald-200 font-serif mb-1">Home Theatre
+                    </h3>
+                    <p class="text-xl md:text-3xl lg:text-4xl font-bold mb-1">Starting <span
+                        class="text-emerald-200">₹89,999</span></p>
+                    <p class="text-white/80 text-xs md:text-sm">4K Projector • Dolby Atmos • Complete Setup</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carousel Arrow Navigation - hidden on mobile -->
+          <button id="carousel-prev"
+            class="hidden md:flex absolute left-4 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/40 backdrop-blur-sm text-white w-10 h-10 rounded-full items-center justify-center transition-all z-30 shadow-lg">
+            <i class="fa-solid fa-chevron-left text-base"></i>
+          </button>
+          <button id="carousel-next"
+            class="hidden md:flex absolute right-4 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/40 backdrop-blur-sm text-white w-10 h-10 rounded-full items-center justify-center transition-all z-30 shadow-lg">
+            <i class="fa-solid fa-chevron-right text-base"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Carousel Navigation Dots -->
+      <div id="carousel-dots" class="flex md:hidden justify-center gap-2 py-3">
+        <button class="carousel-dot active w-2 h-2 rounded-full bg-white transition-all" data-slide="0"></button>
+        <button class="carousel-dot w-2 h-2 rounded-full bg-white/40 hover:bg-white/60 transition-all"
+          data-slide="1"></button>
+        <button class="carousel-dot w-2 h-2 rounded-full bg-white/40 hover:bg-white/60 transition-all"
+          data-slide="2"></button>
+      </div>
+  </section>
+
+  <!-- Services Strip -->
+  <section class="bg-black text-gold-500 py-10 border-b border-gray-800 w-full overflow-hidden">
+    <div class="container mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+      <div class="flex flex-col items-center gap-2 group cursor-default">
+        <i class="fa-solid fa-paint-roller text-3xl mb-2"></i>
+        <h3 class="font-semibold text-sm text-white">Colors & Painting</h3>
+      </div>
+      <div class="flex flex-col items-center gap-2 group cursor-default">
+        <i class="fa-solid fa-film text-3xl mb-2"></i>
+        <h3 class="font-semibold text-sm text-white">Home Theatre</h3>
+      </div>
+      <div class="flex flex-col items-center gap-2 group cursor-default">
+        <i class="fa-solid fa-kitchen-set text-3xl mb-2"></i>
+        <h3 class="font-semibold text-sm text-white">Modular Kitchens</h3>
+      </div>
+      <div class="flex flex-col items-center gap-2 group cursor-default">
+        <i class="fa-solid fa-couch text-3xl mb-2"></i>
+        <h3 class="font-semibold text-sm text-white">Luxury Seating</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Collections / Products -->
+  <section id="collections" class="py-16 bg-white flex-grow w-full overflow-hidden">
+    <div class="container mx-auto">
+      <div class="text-center mb-12">
+        <span class="text-gold-600 font-semibold tracking-wider text-sm uppercase">Our Portfolio</span>
+        <h2 class="font-serif text-3xl md:text-4xl font-bold text-black mt-2">
+          Crafted for Your Home
+        </h2>
+      </div>
+
+      <!-- Categories Filter - Flipkart Style with Icons -->
+      <div class="flex flex-wrap justify-center gap-4 md:gap-8 mb-10" id="category-filters">
+        <button data-category="interiors"
+          class="category-btn category-active flex flex-col items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition-all group">
+          <div
+            class="w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden border-2 border-transparent group-hover:border-gold-500 transition-all">
+            <img src="assets/Interiors/Design1.jpg" alt="Interiors" class="w-full h-full object-cover">
+          </div>
+          <span class="text-xs md:text-sm font-medium text-slate-700 group-hover:text-gold-600">Interiors</span>
+        </button>
+        <button data-category="theatre"
+          class="category-btn flex flex-col items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition-all group">
+          <div
+            class="w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden border-2 border-transparent group-hover:border-gold-500 transition-all">
+            <img src="assets/Home Theatre/HT1.jpg" alt="Home Theatre" class="w-full h-full object-cover">
+          </div>
+          <span class="text-xs md:text-sm font-medium text-slate-700 group-hover:text-gold-600">Home Theatre</span>
+        </button>
+        <button data-category="furniture"
+          class="category-btn flex flex-col items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition-all group">
+          <div
+            class="w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden border-2 border-transparent group-hover:border-gold-500 transition-all">
+            <img src="assets/Furniture/sofa1.jpg" alt="Furniture" class="w-full h-full object-cover">
+          </div>
+          <span class="text-xs md:text-sm font-medium text-slate-700 group-hover:text-gold-600">Furniture</span>
+        </button>
+        <button data-category="curtains"
+          class="category-btn flex flex-col items-center gap-2 p-2 rounded-lg hover:bg-gray-100 transition-all group">
+          <div
+            class="w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden border-2 border-transparent group-hover:border-gold-500 transition-all">
+            <img src="assets/Curtains/curtain1.jpg" alt="Curtains" class="w-full h-full object-cover">
+          </div>
+          <span class="text-xs md:text-sm font-medium text-slate-700 group-hover:text-gold-600">Curtains</span>
+        </button>
+        <button data-category="sale"
+          class="category-btn sale-flash flex flex-col items-center gap-2 p-2 rounded-lg hover:bg-red-50 transition-all group">
+          <div
+            class="w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden border-2 border-red-400 group-hover:border-red-500 transition-all bg-gradient-to-br from-red-500 to-orange-500 flex items-center justify-center">
+            <span class="text-3xl md:text-4xl">🔥</span>
+          </div>
+          <span class="text-xs md:text-sm font-bold text-red-600 group-hover:text-red-700">Sale</span>
+        </button>
+      </div>
+
+      <!-- Product Grid -->
+      <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+        <!-- Products will be injected here via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact" class="bg-black text-gray-400 py-12 border-t border-gray-800 w-full overflow-hidden">
+    <div class="container mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+        <div>
+          <div class="flex items-center gap-2 mb-4 text-gold-500">
+            <i class="fa-solid fa-crown text-2xl"></i>
+            <span class="font-serif font-bold text-xl text-white">GANGARAM ENTERPRISES</span>
+          </div>
+          <p class="text-sm">
+            Home Interiors & Furniture based in Metpalle. <br />We design for
+            your comfort.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="text-white font-semibold mb-4">Our Services</h4>
+          <ul class="space-y-2 text-sm">
+            <li>Indoor Ceiling (POP/Gypsum)</li>
+            <li>Modular Kitchens & Cupboards</li>
+            <li>Home Theatre & Audio Systems</li>
+            <li>UPVC Windows & Glass Railing</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-white font-semibold mb-4">Contact Aravind Reddy</h4>
+          <ul class="space-y-3 text-sm">
+            <li class="flex items-start gap-3">
+              <i class="fa-solid fa-phone mt-1 text-gold-500"></i>
+              <span class="text-white font-bold text-lg">96400 44469</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <i class="fa-solid fa-envelope text-gold-500"></i>
+              <span>aravindreddysoma@gmail.com</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <i class="fa-solid fa-location-dot text-gold-500"></i>
+              <span>Metpalle, Dist:Jagtial, Telangana, 505325</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 pt-8 flex justify-between items-center text-xs">
+        <p>&copy; 2024 Luxe Living Interiors. All rights reserved.</p>
+        <div class="flex gap-4">
+          <i class="fa-brands fa-whatsapp text-lg hover:text-green-500 cursor-pointer"></i>
+          <i class="fa-brands fa-instagram text-lg hover:text-pink-500 cursor-pointer"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Menu Overlay -->
+  <div id="mobile-menu-overlay"
+    class="fixed inset-0 bg-black/70 z-[60] hidden transition-opacity duration-300 opacity-0"></div>
+
+  <!-- Mobile Menu Drawer -->
+  <div id="mobile-menu-drawer"
+    class="fixed top-0 right-0 h-full w-full sm:w-[400px] bg-white z-[70] shadow-2xl transform mobile-menu-closed flex flex-col">
+    <div class="p-5 border-b border-gray-100 flex justify-between items-center bg-black text-white">
+      <h3 class="font-serif text-xl font-bold text-gold-500">Menu</h3>
+      <button id="close-mobile-menu-btn"
+        class="w-8 h-8 flex items-center justify-center rounded-full hover:bg-white/10 text-gray-300 hover:text-white transition-colors">
+        <i class="fa-solid fa-xmark text-xl"></i>
+      </button>
+    </div>
+    <div class="flex-grow overflow-y-auto p-5 space-y-4">
+      <a href="#collections"
+        class="mobile-menu-link flex items-center gap-3 px-4 py-3 text-slate-800 font-semibold hover:bg-gold-500 hover:text-black transition-all rounded-sm border-b border-gray-100">
+        <i class="fa-solid fa-briefcase text-gold-500 w-5"></i>
+        <span>Services</span>
+      </a>
+      <a href="#contact"
+        class="mobile-menu-link flex items-center gap-3 px-4 py-3 text-slate-800 font-semibold hover:bg-gold-500 hover:text-black transition-all rounded-sm border-b border-gray-100">
+        <i class="fa-solid fa-location-dot text-gold-500 w-5"></i>
+        <span>Contact (Address)</span>
+      </a>
+      <a href="https://wa.me/919640044469" target="_blank" rel="noopener noreferrer"
+        class="mobile-menu-link flex items-center gap-3 px-4 py-3 text-slate-800 font-semibold hover:bg-green-500 hover:text-white transition-all rounded-sm border-b border-gray-100">
+        <i class="fa-brands fa-whatsapp text-green-500 w-5"></i>
+        <span>Enquiry now</span>
+      </a>
+      <a href="tel:+919640044469"
+        class="mobile-menu-link flex items-center gap-3 px-4 py-3 text-slate-800 font-semibold hover:bg-gold-500 hover:text-black transition-all rounded-sm">
+        <i class="fa-solid fa-phone text-gold-500 w-5"></i>
+        <span>Call Us</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Shopping Cart Sidebar -->
+  <div id="cart-overlay" class="fixed inset-0 bg-black/70 z-[60] hidden transition-opacity duration-300 opacity-0">
+  </div>
+  <div id="cart-drawer"
+    class="fixed top-0 right-0 h-full w-full sm:w-[400px] bg-white z-[70] shadow-2xl transform cart-closed flex flex-col">
+    <div class="p-5 border-b border-gray-100 flex justify-between items-center bg-black text-white">
+      <h3 class="font-serif text-xl font-bold text-gold-500">Inquiry List</h3>
+      <button id="close-cart-btn"
+        class="w-8 h-8 flex items-center justify-center rounded-full hover:bg-white/10 text-gray-300 hover:text-white transition-colors">
+        <i class="fa-solid fa-xmark text-xl"></i>
+      </button>
+    </div>
+    <div id="cart-items" class="flex-grow overflow-y-auto p-5 space-y-4">
+      <div id="cart-empty-state" class="flex flex-col items-center justify-center h-full text-center text-slate-400">
+        <i class="fa-solid fa-clipboard-list text-6xl mb-4 text-slate-200"></i>
+        <p class="text-lg font-medium text-slate-600">No items selected</p>
+        <p class="text-sm mb-6">Add items to request a quote.</p>
+        <button id="start-shopping-btn"
+          class="bg-black text-gold-500 px-6 py-2 rounded-sm text-sm font-bold hover:bg-gray-900 transition-colors">
+          Browse Services
+        </button>
+      </div>
+    </div>
+    <div id="cart-footer" class="p-5 border-t border-gray-100 bg-gray-50 hidden">
+      <div class="flex justify-between items-center mb-6 text-xl font-serif font-bold text-slate-900">
+        <span>Items</span>
+        <span id="cart-total-count">0</span>
+      </div>
+      <button id="checkout-btn"
+        class="w-full bg-gold-500 text-black py-3 rounded-sm font-bold shadow hover:bg-gold-600 transition-colors flex justify-center items-center gap-2">
+        Request Quote via WhatsApp <i class="fa-brands fa-whatsapp"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Contact Buttons - Call & WhatsApp Icons -->
+  <div class="fixed bottom-8 right-5 z-[100] flex flex-col gap-3">
+    <!-- Call Button -->
+    <a href="tel:+919640044469"
+      class="bg-blue-500 hover:bg-blue-600 text-white w-14 h-14 rounded-full shadow-lg border-2 border-white transition-all duration-300 ease-out flex items-center justify-center hover:shadow-2xl hover:-translate-y-1">
+      <i class="fa-solid fa-phone text-xl"></i>
+    </a>
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/919640044469" target="_blank" rel="noopener noreferrer"
+      class="bg-green-500 hover:bg-green-600 text-white w-14 h-14 rounded-full shadow-lg border-2 border-white transition-all duration-300 ease-out flex items-center justify-center hover:shadow-2xl hover:-translate-y-1">
+      <i class="fa-brands fa-whatsapp text-2xl"></i>
+    </a>
+  </div>
+
+  <!-- Notification Toast -->
+  <div id="toast"
+    class="fixed bottom-5 left-1/2 transform -translate-x-1/2 bg-black text-white px-6 py-3 rounded-md shadow-lg z-[80] translate-y-20 opacity-0 transition-all duration-300 flex items-center gap-3 w-max max-w-[90%] border border-gold-500/50">
+    <i class="fa-solid fa-circle-check text-gold-500"></i>
+    <span id="toast-message" class="text-sm">Added to list</span>
+  </div>
+
+  <script src="app.js" defer></script>
+</body>
+
+</html>
